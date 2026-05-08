@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Volt Fitness is a premium gym website experience with classes, trainers, memberships, booking, and wellness tools.">
+  <title>Volt Fitness | Premium Gym Experience</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" data-header>
+    <nav class="nav" aria-label="Primary navigation">
+      <a class="brand" href="#home" aria-label="Volt Fitness home">
+        <span class="brand-mark">VF</span>
+        <span>Volt Fitness</span>
+      </a>
+
+      <button class="icon-button nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" data-nav-toggle>
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="nav-panel" data-nav-panel>
+        <a href="#programs">Programs</a>
+        <a href="#schedule">Schedule</a>
+        <a href="#trainers">Trainers</a>
+        <a href="#memberships">Memberships</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="nav-actions">
+        <button class="theme-toggle" type="button" aria-label="Toggle dark and light mode" data-theme-toggle>
+          <span class="theme-icon">◐</span>
+        </button>
+        <a class="button button-small" href="#booking">Start Trial</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero section-reveal" id="home">
+      <div class="hero-media" aria-hidden="true">
+        <div class="hero-grid"></div>
+        <div class="hero-figure">
+          <svg viewBox="0 0 620 760" role="img" aria-label="">
+            <defs>
+              <linearGradient id="bodyGradient" x1="0" x2="1" y1="0" y2="1">
+                <stop offset="0" stop-color="#b6ff00"/>
+                <stop offset="0.55" stop-color="#17c3b2"/>
+                <stop offset="1" stop-color="#ff5a1f"/>
+              </linearGradient>
+              <filter id="glow">
+                <feGaussianBlur stdDeviation="9" result="blur"/>
+                <feMerge>
+                  <feMergeNode in="blur"/>
+                  <feMergeNode in="SourceGraphic"/>
+                </feMerge>
+              </filter>
+            </defs>
+            <path class="bar" d="M72 204h476" />
+            <circle cx="87" cy="204" r="46" />
+            <circle cx="533" cy="204" r="46" />
+            <path class="figure-line" d="M310 132c38 0 68 30 68 68s-30 68-68 68-68-30-68-68 30-68 68-68Z"/>
+            <path class="figure-line" d="M188 296c66-46 178-48 244 0"/>
+            <path class="figure-line" d="M246 326l-42 162"/>
+            <path class="figure-line" d="M374 326l42 162"/>
+            <path class="figure-line" d="M260 496l-58 150"/>
+            <path class="figure-line" d="M360 496l58 150"/>
+            <path class="energy" d="M450 112l-36 88h62l-70 136 20-100h-58l44-124z" filter="url(#glow)"/>
+          </svg>
+        </div>
+      </div>
+
+      <div class="hero-content">
+        <p class="eyebrow">Premium strength club</p>
+        <h1>Train hard. Live charged.</h1>
+        <p class="hero-copy">A high-energy fitness experience built for performance, recovery, and real community.</p>
+        <div class="hero-actions">
+          <a class="button" href="#booking">Start Free Trial</a>
+          <a class="button button-secondary" href="#schedule">View Classes</a>
+        </div>
+        <div class="hero-stats" aria-label="Gym highlights">
+          <div><strong data-counter="2400">0</strong><span>Members</span></div>
+          <div><strong data-counter="85">0</strong><span>Weekly Classes</span></div>
+          <div><strong data-counter="22">0</strong><span>Coaches</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="programs section-reveal" id="programs">
+      <div class="section-heading">
+        <p class="eyebrow">Programs</p>
+        <h2>Built for every training style</h2>
+      </div>
+      <div class="program-grid">
+        <article class="program-card">
+          <span>01</span>
+          <h3>Strength Lab</h3>
+          <p>Progressive barbell and functional strength programming for measurable gains.</p>
+        </article>
+        <article class="program-card">
+          <span>02</span>
+          <h3>HIIT Engine</h3>
+          <p>Conditioning circuits that combine speed, stamina, and coach-led intensity.</p>
+        </article>
+        <article class="program-card">
+          <span>03</span>
+          <h3>Mobility Flow</h3>
+          <p>Yoga, recovery, and mobility sessions that keep members moving well.</p>
+        </article>
+        <article class="program-card">
+          <span>04</span>
+          <h3>Boxing Club</h3>
+          <p>Technique, bag work, and sweat-heavy rounds in an electric group setting.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="schedule section-reveal" id="schedule">
+      <div class="section-heading">
+        <p class="eyebrow">Weekly Schedule</p>
+        <h2>Find your next class</h2>
+      </div>
+      <div class="filter-bar" aria-label="Class schedule filters">
+        <select data-filter="day" aria-label="Filter by day">
+          <option value="all">All days</option>
+          <option value="Mon">Monday</option>
+          <option value="Tue">Tuesday</option>
+          <option value="Wed">Wednesday</option>
+          <option value="Thu">Thursday</option>
+          <option value="Fri">Friday</option>
+        </select>
+        <select data-filter="type" aria-label="Filter by class type">
+          <option value="all">All types</option>
+          <option value="Strength">Strength</option>
+          <option value="HIIT">HIIT</option>
+          <option value="Yoga">Yoga</option>
+          <option value="Boxing">Boxing</option>
+        </select>
+        <select data-filter="trainer" aria-label="Filter by trainer">
+          <option value="all">All trainers</option>
+          <option value="Maya">Maya</option>
+          <option value="Jordan">Jordan</option>
+          <option value="Elena">Elena</option>
+          <option value="Chris">Chris</option>
+        </select>
+      </div>
+      <div class="schedule-grid" data-schedule-list></div>
+    </section>
+
+    <section class="trainers section-reveal" id="trainers">
+      <div class="section-heading">
+        <p class="eyebrow">Coaches</p>
+        <h2>Expert trainers, real accountability</h2>
+      </div>
+      <div class="trainer-grid" data-trainer-list></div>
+    </section>
+
+    <section class="memberships section-reveal" id="memberships">
+      <div class="section-heading">
+        <p class="eyebrow">Memberships</p>
+        <h2>Choose your commitment</h2>
+      </div>
+      <div class="billing-toggle" role="group" aria-label="Billing period">
+        <button class="active" type="button" data-billing="monthly">Monthly</button>
+        <button type="button" data-billing="yearly">Yearly</button>
+      </div>
+      <div class="pricing-grid">
+        <article class="price-card">
+          <h3>Basic</h3>
+          <p class="price"><span data-price data-monthly="79" data-yearly="69">$79</span><small>/mo</small></p>
+          <ul>
+            <li>Open gym access</li>
+            <li>Locker rooms</li>
+            <li>2 classes per month</li>
+          </ul>
+          <a class="button button-secondary" href="#booking">Join Basic</a>
+        </article>
+        <article class="price-card featured">
+          <div class="badge">Most Popular</div>
+          <h3>Pro</h3>
+          <p class="price"><span data-price data-monthly="129" data-yearly="109">$129</span><small>/mo</small></p>
+          <ul>
+            <li>Unlimited classes</li>
+            <li>Monthly body scan</li>
+            <li>Recovery lounge access</li>
+          </ul>
+          <a class="button" href="#booking">Join Pro</a>
+        </article>
+        <article class="price-card">
+          <h3>Elite</h3>
+          <p class="price"><span data-price data-monthly="219" data-yearly="189">$219</span><small>/mo</small></p>
+          <ul>
+            <li>Personal training credits</li>
+            <li>Nutrition coaching</li>
+            <li>Priority class booking</li>
+          </ul>
+          <a class="button button-secondary" href="#booking">Join Elite</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="tools section-reveal">
+      <div class="bmi-panel">
+        <div>
+          <p class="eyebrow">Fitness Tool</p>
+          <h2>BMI Calculator</h2>
+          <p>Get a quick wellness reference, then talk with a coach for a plan built around your goals.</p>
+        </div>
+        <form class="bmi-form" data-bmi-form>
+          <label>
+            Height
+            <input type="number" min="36" max="96" name="height" placeholder="Inches" required>
+          </label>
+          <label>
+            Weight
+            <input type="number" min="60" max="700" name="weight" placeholder="Pounds" required>
+          </label>
+          <button class="button" type="submit">Calculate</button>
+          <output data-bmi-result aria-live="polite"></output>
+        </form>
+      </div>
+    </section>
+
+    <section class="testimonials section-reveal" aria-label="Member testimonials">
+      <div class="section-heading">
+        <p class="eyebrow">Member Wins</p>
+        <h2>Momentum you can feel</h2>
+      </div>
+      <div class="testimonial-shell">
+        <button class="icon-button" type="button" aria-label="Previous testimonial" data-testimonial-prev>‹</button>
+        <blockquote data-testimonial>
+          <p></p>
+          <cite></cite>
+        </blockquote>
+        <button class="icon-button" type="button" aria-label="Next testimonial" data-testimonial-next>›</button>
+      </div>
+    </section>
+
+    <section class="booking section-reveal" id="booking">
+      <div class="section-heading">
+        <p class="eyebrow">Start Today</p>
+        <h2>Book a free trial</h2>
+      </div>
+      <form class="booking-form" data-booking-form>
+        <label>
+          Full name
+          <input type="text" name="name" autocomplete="name" required>
+        </label>
+        <label>
+          Email
+          <input type="email" name="email" autocomplete="email" required>
+        </label>
+        <label>
+          Phone
+          <input type="tel" name="phone" autocomplete="tel" required>
+        </label>
+        <label>
+          Interest
+          <select name="interest" required>
+            <option value="">Select one</option>
+            <option>Membership tour</option>
+            <option>Strength class</option>
+            <option>Personal training</option>
+            <option>Recovery session</option>
+          </select>
+        </label>
+        <label>
+          Preferred date
+          <input type="date" name="date" required>
+        </label>
+        <label class="full">
+          Message
+          <textarea name="message" rows="4" placeholder="Tell us about your goals"></textarea>
+        </label>
+        <button class="button" type="submit">Request Trial</button>
+        <p class="form-status" data-form-status aria-live="polite"></p>
+      </form>
+    </section>
+
+    <section class="contact section-reveal" id="contact">
+      <div class="contact-info">
+        <p class="eyebrow">Visit Us</p>
+        <h2>Downtown training, easy access</h2>
+        <p>225 Atlas Ave, Austin, TX 78701</p>
+        <p>Mon-Fri 5:00 AM-10:00 PM · Sat-Sun 7:00 AM-7:00 PM</p>
+        <p><a href="tel:+15125550147">(512) 555-0147</a> · <a href="mailto:hello@voltfitness.com">hello@voltfitness.com</a></p>
+      </div>
+      <div class="map-card" role="img" aria-label="Stylized map showing Volt Fitness near downtown streets">
+        <span>VOLT</span>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 Volt Fitness. Built for performance, community, and growth.</p>
+    <a href="#home">Back to top</a>
+  </footer>
+
+  <div class="modal" data-modal hidden>
+    <div class="modal-backdrop" data-modal-close></div>
+    <article class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <button class="icon-button modal-close" type="button" aria-label="Close profile" data-modal-close>×</button>
+      <div data-modal-content></div>
+    </article>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
